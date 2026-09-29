@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+header {
+    background-color: #303030;
+    padding: 0 60px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1160px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+#articulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 60px;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+article img {
+    width: 100%;
+    height: 322px;
+    object-fit: cover;
+    display: block;
+}
+
+article h2 {
+    font-size: 24px;
+    margin: 25px 0 15px;
+}
+
+article p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+button {
+    width: 153px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+th,
+td {
+    border: 1px solid #d5d5d5;
+    padding: 22px;
+}
+
+thead th {
+    background-color: #f1f1f1;
+}
+
+tfoot th {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #303030;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #articulos {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    article img {
+        height: 250px;
+    }
+
+    main {
+        margin: 30px auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 12px 6px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Práctico HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="#" class="logo">MyLogo</a>
+
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#articulos">About</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section id="articulos" aria-labelledby="titulo-articulos">
+
+            <h1 id="titulo-articulos" class="visually-hidden">
+                Artículos
+            </h1>
+
+            <article>
+                <img src="img/articulo1.jpg" alt="Imagen representativa del primer artículo">
+
+                <h2>Article Title</h2>
+
+                <p>
+                    Article content goes here. This is a sample article content.
+                </p>
+            </article>
+
+            <article>
+                <img src="img/articulo2.jpg" alt="Imagen representativa del segundo artículo">
+
+                <h2>Article Title</h2>
+
+                <p>
+                    Article content goes here. This is a sample article content.
+                </p>
+            </article>
+
+        </section>
+
+
+        <section id="contacto" aria-labelledby="titulo-contacto">
+
+            <h2 id="titulo-contacto">Contact Form</h2>
+
+            <form>
+
+                <div>
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="mensaje">Message:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+
+        <section aria-labelledby="titulo-notas">
+
+            <h2 id="titulo-notas">Student Scores</h2>
+
+            <table>
+
+                <caption>
+                    Calificaciones de los estudiantes en HTML y CSS
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">HTML</th>
+                        <th scope="col">CSS</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">John</th>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>170</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Jane</th>
+                        <td>85</td>
+                        <td>95</td>
+                        <td>180</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total</th>
+                        <th>350</th>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Contact us at: info@example.com</p>
+    </footer>
+
+</body>
+</html>
